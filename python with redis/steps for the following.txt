@@ -1,0 +1,15 @@
+1. Creating timestamp
+2.Storing data to the on file system as a text file with unique filename,this file will be deleted once the tranmission is successful
+once the files are succesfully stored in the memory it will be send an ack to the broker that the file are successfully recieved
+3. at this function the file are converted to the appropriate sizes so its readiblity is improved(optional)
+4.
+while transfering the files at this point i will be storing some values per transaction such as
+last completed completed time | Size of the file | total limit into the file in the system.
+5.  Creating redis connection
+6. storing the following as a hash -table, for every entry it will stored with the file name as the unique key.other attributes associated to it are
+    1.Filename,
+    2.timestamp,
+    3.size of the file
+7.From cofigconnector file i will taking the values for following attributes, and using them for sleeping the process sleeping the process as size is more then the limit
+8.as the process wakes up the values will be set to zero and if incase of failure it will try to resume the process form that point of time
+9.if the files are successfully tranfered from the , the files will be deleted form the system where it was stored.

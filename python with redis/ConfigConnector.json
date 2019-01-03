@@ -1,0 +1,15 @@
+//"""configuration file for the maximumn size for tranfer on bases of the time allocated per hour"""
+
+//{
+//Total_size=200000
+//max_tranfer_in_hour= 1hr
+//limit= ??
+
+{"root":
+	{
+	"Total_size":20000,
+      "limit": 50000,
+      "max_tranfer_in_hour":"200000"
+
+	}
+}
